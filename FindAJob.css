@@ -1,0 +1,140 @@
+/* Search Jobs Section */
+.search-jobs {
+    padding: 50px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000; /* Ensure text is readable on the background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.search-bar input[type="text"] {
+    width: 80%;  /* Make the search bar wider */
+    max-width: 1000px;  /* Maximum width */
+    padding: 20px;  /* Increase padding for a larger feel */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust border color for better visibility */
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 24px;  /* Increase font size */
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust background color for better visibility */
+    color: #000000; /* Text color */
+}
+
+
+.search-bar button {
+    padding: 20px 40px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.filter-options {
+    margin-bottom: 20px;
+}
+
+/* Job Listings */
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Individual Job Box */
+.job-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.job-box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.job-box p {
+    margin-bottom: 10px;
+}
+
+.job-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.job-box button:hover {
+    background-color: #0056b3;
+}
+.filter-options {
+    margin-bottom: 20px;
+}
+
+.filter-options label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-options select, 
+.filter-options input[type="text"],
+.filter-options input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.job-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-box h2 {
+    margin-bottom: 10px;
+}
+
+.job-box p {
+    margin-bottom: 10px;
+}
+
+.job-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.job-box button:hover {
+    background-color: #0056b3;
+}

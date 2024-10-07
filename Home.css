@@ -1,0 +1,212 @@
+/* Search and Filter Section */
+.filter-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    height: 100px;
+    }
+
+.filter-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.search-filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-filter input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    width: 300px;
+}
+
+.search-filter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #006d77;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-filter button:hover {
+    background-color: #005960;
+    transform: scale(1.05);
+}
+
+.filter-menu {
+    position: relative;
+    text-align: center; 
+  
+}
+
+#filter-toggle {
+    padding: 10px 20px;
+    background-color: #006d77;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;  
+}
+
+#filter-toggle:hover {
+    background-color: #005960;
+    transform: scale(1.05);
+}
+
+.filter-options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    z-index: 10;
+}
+
+.filter-options.show {
+    display: block;
+}
+
+.filter-item {
+    margin-bottom: 20px;
+}
+
+.filter-item label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.filter-item input[type="range"] {
+    width: 100%;
+}
+
+.filter-item select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.filter-options.show {
+    display: block;
+}
+
+/* Ads Styles */
+.ads {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.ads:hover {
+    cursor: pointer;
+}
+
+.ad-container {
+    width: calc(33.33% - 20px); /* Adjust based on your layout */
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ad-image {
+    width: 100%;
+    height: 200px; /* Adjust based on your image aspect ratio */
+    overflow: hidden;
+}
+
+.ad-image img {
+    width: 100%;
+    height: auto;
+}
+
+.ad-image img {
+    width: 100%; /* Adjust image width */
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ /* Job container */
+ .job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Job box */
+.job-box {
+    flex-basis: calc(29%); /* Adjust width for 3 columns */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.job-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+/* Job image */
+.job-image img {
+    width: 100%; /* Adjust image width */
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Job details */
+.job-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.job-details p {
+    margin-bottom: 10px;
+}
+
+.job-details strong {
+    font-weight: bold;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+

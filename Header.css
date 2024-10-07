@@ -1,0 +1,175 @@
+/* Reset some default styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to top, #e0eafc, #cfdef3); /* Subtle gradient colors */
+    color: #333; /* Darker text color for contrast */
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a img {
+    height: 50px; /* Adjust the height of the logo as needed */
+    width: auto;
+    margin-right: 10px; /* Space between logo and company name */
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.nav a:hover {
+    background-color: #cfdef3; /* Subtle color for hover effect */
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+.search-bar-header {
+    display: flex;
+    align-items: center;
+    border: 2px solid #cfdef3;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.search-bar-header input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 25px 0 0 25px;
+    width: 200px;
+    color: #333;
+}
+
+.search-bar-header button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #cfdef3;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-bar-header button i {
+    font-size: 16px;
+}
+
+.search-bar-header button:hover {
+    background-color: #e0eafc;
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-icon img {
+    height: 30px; /* Adjust the height of the user icon */
+    width: auto;
+    margin-bottom: 10px; /* Space between icon and buttons */
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-buttons .btn {
+    color: #333;
+    background-color: #cfdef3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.auth-buttons .btn:first-child {
+    margin-left: 0; /* Remove margin from the first button */
+}
+
+.auth-buttons .btn:hover {
+    background-color: #e0eafc;
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    height: 2px;
+    width: 25px;
+    background-color: #333;
+    margin-bottom: 4px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #e0eafc;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-open ul {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
